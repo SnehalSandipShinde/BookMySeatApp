@@ -1,25 +1,23 @@
 package com.prowings;
 
-public class Theater 
-{
-	
+public class Theater {
+
 	int totalSeats = 10;
-	
-	public void bookSeats(int seats) 
-	{
-		
-		if(seats <= totalSeats) 
+
+	public void bookSeats(int seats) {
+
+		if (seats <= totalSeats) 
 		{
-			System.out.println(Thread.currentThread().getName() +" "+ seats + " seats are booked successfully..." );
+			System.out.println(Thread.currentThread().getName() + " " + seats + " seats are booked successfully...");
 			totalSeats = totalSeats - seats;
-			System.out.println(Thread.currentThread().getName()+ " Available seats are: "+ totalSeats);
+			System.out.println(Thread.currentThread().getName() + " Available seats are: " + totalSeats);
 		}
-		else
+		else 
 		{
-			System.out.println(Thread.currentThread().getName()+ " "+ seats + " seats are not available");
-			System.out.println(Thread.currentThread().getName()+ " "+ totalSeats + "seats are available");
+			System.out.println(Thread.currentThread().getName() + " " + seats + " seats are not available");
+			System.out.println(Thread.currentThread().getName() + " " + totalSeats + "seats are available");
 		}
-		
+
 	}
 
 }
